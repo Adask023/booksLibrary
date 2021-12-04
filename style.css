@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.max-width {
+  max-width: 1200px;
+}
+
+.app {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+#error {
+  color: red
+}
+
+.form__container {
+  padding: 2rem;
+  min-width: 200px;
+  width: 40%;
+}
+
+.form__container #form div {
+  padding: 0.6rem 0;
+}
+
+.form__container #form div input {
+  padding: 0.4rem;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  width: 100%;
+}
+
+.form__container #form div input:focus,
+.form__container #form div select:focus {
+  outline: none;
+}
+
+.form__container #form div input:hover,
+.form__container #form div input:focus {
+  border-bottom: 2px solid gray;
+  transition: 0.2s ease all;
+}
+
+.form__container #form div select {
+  width: 100%;
+  border-color: lightgray;
+}
+
+.form__container #form div select:hover,
+.form__container #form div select:focus {
+  border-color: gray;
+  transition: 0.2s ease all;
+}
+
+.form__container #form div {
+  text-align: center;
+}
+
+.form__container #form div button {
+  background-color: transparent;
+  padding: 0.2rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid lightgray;
+}
+
+.form__container #form div button:hover {
+  border: 2px solid gray;
+  transition: 0.2s ease all;
+}
+
+.content {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content .books__wrapper table {
+  border-collapse: collapse;
+  font-size: 1rem;
+  min-width: 60%;
+  margin: auto;
+
+}
+
+.books__wrapper table tr th {
+  text-align: left;
+  padding: 0.6rem 0.1rem;
+  border: 1px solid #ddd;
+}
+
+.books__wrapper table tr td {
+  border: 1px solid #ddd;
+  padding: 0.4rem 0.2rem;
+}
+
+.books__wrapper table tr:nth-of-type(even) {
+  background-color: rgb(236, 236, 236);
+}
