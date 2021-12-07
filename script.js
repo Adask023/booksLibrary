@@ -22,7 +22,6 @@ const formReset = () => {
 }
 
 const addBook = (title, author, priority, category) => {
-  console.log(`Book added: ${title}, ${author}, ${priority}, ${category}`)
   const prev = books
   books = ([{
     id: Math.floor(Math.random() * 1234),
@@ -31,7 +30,6 @@ const addBook = (title, author, priority, category) => {
     priority,
     category,
   }, ...prev])
-  console.log(books)
   localStorage.setItem('booksList', JSON.stringify(books))
 }
 
@@ -98,14 +96,10 @@ form.addEventListener('submit', (e) => {
   if (priority.value === "") {
     messages.push('Priority field cant be empty')
   }
-  if (priority.value > 5 || priority.value < 1) {
-    messages.push('Priority field value must be between 5 and 1')
-  }
 
   if (category.value === "") {
     messages.push('Category field cant be empty')
   }
-
 
   if (messages.length > 0) {
     errorElement.innerText = messages.join(', \r\n')
